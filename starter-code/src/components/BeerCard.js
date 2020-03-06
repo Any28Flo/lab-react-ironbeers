@@ -8,7 +8,7 @@ class BeerCard extends Component{
      render(){
            const {detailBeer} = this.props
           return(
-               <Link to={`${detailBeer._id}`}>
+               <Link to={`/beers/${detailBeer._id}`}>
                <div className="column is-12">
                     <div className="card">
                          <div className="card-content">

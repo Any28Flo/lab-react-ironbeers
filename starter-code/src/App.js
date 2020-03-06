@@ -8,6 +8,7 @@ import RandomBeer from './components/RandomBeer'
 import NewBeer from './components/NewBeer'
 import Nav from './components/Nav'
 import DetailBeer from './components/DetailBeer'
+
 class App extends Component {
   render() {
     return (
@@ -19,7 +20,7 @@ class App extends Component {
           <Route exact path="/beers" component ={Beers}/>
           <Route exact path="/random-beer" component ={RandomBeer}/>
           <Route exact path="/new-beer" component={NewBeer}/>
-          <Route path="/beers/:id" component={DetailBeer}/>
+          <Route exact path="/beers/:id" component={DetailBeer}/>
           </Switch>
 
         </div>
